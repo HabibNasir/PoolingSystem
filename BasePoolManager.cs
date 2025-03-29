@@ -31,7 +31,7 @@ namespace PoolingSystem
         {
             return _pool.Count > 0 ? _pool.Dequeue() : _createAction();
         }
-        // ReSharper disable Unity.PerformanceAnalysis
+        
         public void AddToPool(T item)
         {
             _pool.Enqueue(item);
